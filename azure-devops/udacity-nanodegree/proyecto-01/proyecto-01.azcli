@@ -1,0 +1,2 @@
+# Create the Policy Definition (Subscription scope)
+az policy definition create --name deny-resources-without-tags --display-name "Deny creation of resources without tags" --description "Deny creation of resources without tags" --rules https://raw.githubusercontent.com/Azure/azure-policy/master/samples/Compute/audit-existing-linux-vm-ssh-with-password/azurepolicy.rules.json --mode All
